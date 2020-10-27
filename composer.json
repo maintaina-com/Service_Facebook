@@ -1,7 +1,7 @@
 {
-    "name": "horde/service-facebook",
+    "name": "horde/service_facebook",
     "description": "Facebook client library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org/libraries/Horde_Service_Facebook",
     "license": "BSD-2-Clause",
     "authors": [
@@ -12,27 +12,25 @@
         }
     ],
     "version": "2.0.11",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Exception": "^2",
-        "pear-pear.horde.org/Horde_Http": "^2",
-        "pear-pear.horde.org/Horde_Translation": "^2.2",
-        "pear-pear.horde.org/Horde_Support": "^2",
-        "pear-pear.horde.org/Horde_Util": "^2",
+        "horde/exception": "dev-master",
+        "horde/http": "dev-master",
+        "horde/translation": "dev-master",
+        "horde/support": "dev-master",
+        "horde/util": "dev-master",
         "ext-json": "*",
         "ext-SimpleXML": "*"
     },
-    "replace": {
-        "pear-pear.horde.org/Horde_Service_Facebook": "2.*",
-        "pear-horde/Horde_Service_Facebook": "2.*"
-    },
+    "suggest": {},
     "autoload": {
         "psr-0": {
             "Horde_Service_Facebook": "lib/"
